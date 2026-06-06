@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+tp7_serialisation/tp7.3_protobuf/generated/
+*.html
