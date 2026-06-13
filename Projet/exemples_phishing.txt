@@ -1,0 +1,81 @@
+========================================================================
+EXEMPLES D'E-MAILS POUR LA DÉMONSTRATION PHISHSHIELD
+========================================================================
+Utilisez ces exemples en copiant-collant les champs lors de votre soutenance
+pour démontrer comment l'heuristique attribue les scores.
+
+------------------------------------------------------------------------
+EXEMPLE 1 : PHISHING ÉVIDENT (RISQUE ÉLEVÉ)
+------------------------------------------------------------------------
+Expéditeur   : security-update@paypal-security.com
+Objet        : Urgent : Suspension immédiate de votre compte PayPal
+Pièce jointe : Non
+
+Contenu :
+Cher client,
+
+Nous avons détecté une connexion suspecte sur votre compte. Veuillez vérifier votre mot de passe immédiatement pour éviter une suspension définitive de vos services.
+
+Cliquez sur le lien sécurisé ci-dessous pour confirmer votre identité :
+http://verification-portal-paypal-secure.com/login-auth
+
+L'équipe de sécurité PayPal.
+
+(Pourquoi c'est élevé : Mots-clés urgents "urgent", "immédiat", "mot de passe". Le domaine de l'expéditeur ne correspond pas au domaine du lien cliqué.)
+
+------------------------------------------------------------------------
+EXEMPLE 2 : PHISHING CIBLÉ / SPEAR PHISHING (RISQUE MOYEN)
+------------------------------------------------------------------------
+Expéditeur   : rh-direction@votre-entreprise.com
+Objet        : Nouveau règlement intérieur
+Pièce jointe : Oui (cocher la case)
+
+Contenu :
+Bonjour à tous,
+
+Veuillez trouver en pièce jointe la nouvelle politique de télétravail qui entrera en vigueur dès la semaine prochaine. 
+Merci de lire le document et de signer via ce portail externe :
+http://rh-signature-enligne.com/doc-584
+
+Cordialement,
+La Direction des Ressources Humaines.
+
+(Pourquoi c'est moyen : Présence d'un lien externe, d'une pièce jointe suspecte, mais moins de mots "urgents" agressifs).
+
+------------------------------------------------------------------------
+EXEMPLE 3 : E-MAIL LÉGITIME (RISQUE FAIBLE / FAUX POSITIF)
+------------------------------------------------------------------------
+Expéditeur   : jean.dupont@gmail.com
+Objet        : Photos du week-end
+Pièce jointe : Non
+
+Contenu :
+Salut,
+
+Comme promis, voici le lien vers l'album photo de notre randonnée du week-end dernier ! J'ai hâte qu'on remette ça.
+
+https://photos.google.com/share/abc123xyz
+
+À plus tard,
+Jean
+
+(Pourquoi c'est faible : Aucun vocabulaire urgent/suspect, même s'il y a un lien, le score restera sous le seuil d'alerte).
+
+------------------------------------------------------------------------
+EXEMPLE 4 : ARNAQUE AU COLIS (RISQUE ÉLEVÉ)
+------------------------------------------------------------------------
+Expéditeur   : no-reply@chronopost-livraison.fr
+Objet        : Votre colis est en attente d'affranchissement
+Pièce jointe : Non
+
+Contenu :
+Bonjour,
+
+Votre colis n°849302 n'a pas pu être livré car des frais de douane de 1,95€ sont en attente. 
+Pour programmer une nouvelle livraison immédiate, veuillez régler les frais via ce lien :
+http://paiement-douane-express.com/pay
+
+Attention, sans action de votre part, le colis sera retourné à l'expéditeur.
+
+Cordialement,
+Service Livraison.

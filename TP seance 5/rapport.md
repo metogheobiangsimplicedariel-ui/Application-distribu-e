@@ -389,10 +389,6 @@ Ce travail a permis de concevoir l'architecture d'un **Système de Gestion Docum
 
 L'architecture respecte les principes **Zero Trust** : authentification partout, moindre privilège, chiffrement en transit, segmentation réseau et hypothèse de compromission.
 
----
 
-**Fin du rapport -- TP de la Séance 5**
 
----
-```
 
